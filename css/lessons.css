@@ -149,7 +149,7 @@ body{
     border-radius: 20px;
 }
 button.action{
-  border-radius: 5px;
+  border-radius: 25px;
   border: 2px solid #264510;
   background-color: white;
 }

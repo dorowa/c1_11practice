@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lessons.css">
+
+    <title>PWS A6 заготовка</title>
+  </head>
+  <body>
+
+    <div class="container-fluid main-body">
+        <div class="row first-screen">
+            <div class="col-10 col-height"></div> <!--  row 1 - head -->
+        </div>
+        <div class="row row-align first-screen"> <!-- row 2 body -->
+            <div class="col-1 m-0 p-0 col-height"></div>
+            <div class="col-3 m-0 p-0 col-height hexa-cell-top"></div>
+            <div class="col-1 m-0 p-0 col-height"></div>
+            <div class="col-3 m-0 p-0 col-height hexa-cell-plus">
+                <div class="hex-inner add-1">
+                    +
+                </div>
+            </div>
+        </div>
+        <div class="row row-align first-screen"><!-- row 3 body -->
+            <div class="col-3 m-0 col-height hexa-cell-left"></div>
+            <div class="col-1 m-0 col-height">
+                <input type="number" min="0" max="59" maxlength="2" class="pt-2 pb-2 in-class minutes" value="00">
+            </div>
+            <div class="col-1 m-0 col-height">
+                <input type="number" min="0" max="59" maxlength="2" class="pt-2 pb-2 in-class seconds" value="00">
+            </div>
+            <div class="col-2 m-0 col-height"><button class="pt-2 pb-2 action start">СТАРТ</button></div>
+            <div class="col-2 m-0 col-height"><button class="pt-2 pb-2 action stop">СТОП</button></div>
+            <div class="col-3 m-0 p-0 col-height hexa-cell-right">
+                <div class="hex-inner">
+                    <p class="p-0 m-0 predator-timer">37</p>
+                </div>
+            </div>
+        </div> 
+        <div class="row row-align first-screen"><!-- row 4 body -->
+            <div class="col-1 m-0 col-height"></div>
+            <div class="col-3 m-0 col-height hexa-cell-bottom"></div>
+            <div class="col-1 m-0 col-height"></div>
+            <div class="col-3 m-0 p-0 col-height hexa-cell-minus">
+                <div class="hex-inner sub-1">
+                    -
+                </div>
+            </div>
+        </div>
+        <div class="row first-screen">
+            <div class="col-12 col-height"></div> <!-- row 5 footer -->
+        </div>
+        <div class="row">
+            <div class="col message"></div>
+        </div>
+    </div>
+    <div class="back-cover"></div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

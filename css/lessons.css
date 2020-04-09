@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+@font-face {
+    font-family:"Predator";
+    src: url("../fonts/PREDATOR.woff") format("woff");
+    font-weight:normal;font-style:normal;}
+
+body{
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 100;
+    font-size: 4vh;
+    min-height: 500px;
+}
+.main-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    min-height: 500px;
+    min-width: 800px;
+}
+.back-cover {   
+    background: no-repeat center/100% url("../images/predator-body.jpg");
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    min-height: 500px;
+}
+.col-height{
+    height: 20vh;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-align {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vh;
+    min-width: 600px;
+    position: relative;
+}
+.row-height{
+    height: 10vh;
+}
+.hexa-cell-top{
+  content: "";
+  background: no-repeat center/100% url("../images/2531470_900.jpg");
+  background-size: cover;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: -1;
+}
+.hexa-cell-left{
+  content: "";
+  background: no-repeat center/100% url("../images/left.jpg");
+  background-size: cover;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: -1;   
+}
+.hexa-cell-bottom{
+  content: "";
+  background: no-repeat center/100% url("../images/bottom.jpg");
+  background-size: cover;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  z-index: -1;   
+}
+.hexa-cell-plus{
+  background: no-repeat center/100% url("../images/arrow-up.png");
+  background-size: cover;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  position: relative;
+
+}
+.hexa-cell-minus{
+  background: no-repeat center/100% url("../images/arrow-down.png");
+  background-size: cover;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.hexa-cell-right{
+    background-color: rgba(38,89,23,1);
+    background-size: cover;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: relative;
+}
+.hex-inner{
+  background-color: rgba(255,255,255,0.8);
+  background-size: cover;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  opacity: 1;
+  z-index: -1;
+  width: 95%;
+  height: 95%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 40px;
+}
+.hex-inner:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+.predator-timer{
+    font-family: 'Predator';
+    font-weight: 600;
+    color: #CA142B;
+    font-size: 52px;
+}
+
+.add-1, .sub-1 {
+    cursor: pointer;
+    user-select: none;
+}
+.message>img {
+    height: 90vh;
+    border-radius: 20px;
+}
+button.action{
+  border-radius: 5px;
+  border: 2px solid #264510;
+  background-color: white;
+}
+
+input{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    border-style: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 5;
+}
